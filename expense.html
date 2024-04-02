@@ -1,0 +1,174 @@
+<!-- index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/x-icon" href="pexels-photomix-company-518245.jpg">
+
+	<link rel="stylesheet" href="expense.css" />
+	<title>Expense Tracker</title>
+	 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+	<div class="container-fluid" style="margin: 0; padding: 0;">
+		<nav class="navbar navbar-expand-lg" style="color:rgb(255, 255, 255)">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" style="color: black; font-size: 20px;" href="front.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" style="color: black; font-size: 20px;" href="features.html">Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" style="color: black; font-size: 20px;" href="new.html">Articles</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" style="color: black; font-size: 20px;" href="login.html">Login</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="imgnew">
+				
+				<img src="ET-.png" alt="logo">
+			</div>
+		</nav>
+	</div>
+	
+		<div>
+		   <div class="wave"></div>
+		   <div class="wave"></div>
+		   <div class="wave"></div>
+		</div>
+	<div class="loader"></div>
+
+	<!-- 
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#"class="active">Features</a>
+        <a href="#" class="active">Pricing</a>
+    </nav> -->
+
+	<br>
+	<div class="mainhead">
+		<h1 style="color: rgb(0, 0, 0); font-size: 90px; text-decoration: wavy; background-color: white;" class="hhh">
+			Expense Tracker
+		</h1>
+	</div>
+	<br>
+	<div class="summary">
+			<div>
+				<h1 class="Balance"> Balance:
+				<span id="updatedBal">
+					7000
+				</span>
+			</h1>
+		</div>
+		<br />
+		<div class="total">
+			<div>
+				Total Income:
+				<div>
+					<h2 style="color: green;" id="updatedInc">
+						25000
+					</h2>
+				</div>
+			</div>
+			<hr class="verticle" />
+			<div>
+				Total Expenses:
+				<div>
+					<h2 style="color: red;" id="updatedExp">
+						18000
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="root">
+		<div id="items">
+			<h2 class="newh2">Transaction History</h2>
+			<table id="table">
+				<tr class="titles">
+					<th>S.no.</th>
+					<th>Name</th>
+					<th>Amount</th>
+					<th>Type</th>
+					<th>Delete</th>
+				</tr>
+			</table>
+		</div>
+		<hr class="vertical" />
+		<div id="new">
+			<h2>Add new</h2>
+
+			<div class="inputs">
+				<div class="inputitem">
+					<p style="width: 9rem" class="letus">
+						Entry type:
+					</p>
+					<select id='itemType'>
+						<option value="0">Expense</option>
+						<option value="1">Income</option>
+					</select>
+				</div>
+				<div class="inputitem">
+					<p style="width: 9rem" class="letus">Name:</p>
+					<input id="name" type="text" value="" placeholder="name" />
+				</div>
+				<div class="inputitem">
+					<p style="width: 9rem" class="letus">Amount:</p>
+					<input value="0" id="amount" name="mod" type="number" placeholder="amount" />
+				</div>
+			</div>
+			<button onclick="addItem()">
+				Add Expense
+			</button>
+		</div>
+	</div>
+	<div class="background-container">
+		<div class="container container1">
+			<strong>"Beware of little expenses. A small leak will sink a great ship." - Benjamin Franklin</strong>
+
+		</div>
+		<div class="container container2">
+			<strong>"A budget is telling your money where to go instead of wondering where it went." - Dave Ramsey
+			</strong>
+
+		</div>
+		<div class="container container3">
+			<strong>"Every dollar you spend is a vote for the world you want to live in." - Anna Lappé
+			</strong>
+
+		</div>
+		<div class="container container4">
+			<strong>"Don't tell me what you value, show me your budget, and I'll tell you what you value." - Joe Biden
+			</strong>
+
+		</div>
+		
+	  </div>
+	
+	<script src="expense.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+/* style.css*/
+
+/* Style to body tag*/
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(211, 138, 43);
+    
+}
+.nav-item:hover{
+	background-color: rgb(142, 97, 29);
+border-radius: 50px;
+
+}
+.imgss {
+	width: 100px !important;
+	height: 100px !important;
+  }
+  
+.nav-item{
+	margin: 15px;
+}
+.myull{
+	font-size: 30px;
+}
+#myul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.editzz{
+	font-size: larger;
+}
+#myul>li{
+    justify-content: space-evenly;
+    margin: auto;
+}
+body { 
+	display: flexbox; 
+	text-align: center; 
+	align-items: center; 
+    background-size: auto 100%;
+	background-color: #000000;
+} 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Style to expense summary */
+.summary { 
+	width: 25rem; 
+	display: flex; 
+	flex-direction: column; 
+	text-align: center; 
+	margin: auto; 
+	margin-bottom: 40px; 
+	padding: 1%; 
+	box-shadow: 10px 10px 18px 18px rgba(0, 0, 0, 0.2); 
+} 
+
+
+.total { 
+	display: flex; 
+	flex-direction: row; 
+	margin: auto; 
+} 
+
+.total>div { 
+	width: 200px; 
+} 
+
+/* Style for the expense table and input form*/
+.root { 
+	width: fit-content; 
+	background-color: rgb(225, 223, 213); 
+	display: flex; 
+	margin: auto; 
+	padding: 2%; 
+	padding-top: 1%; 
+	justify-content: center; 
+	text-align: center; 
+	border-width: 6px; 
+	border: 6px grey; 
+	box-sizing: content-box; 
+	box-shadow: 10px 10px 18px 18px rgba(0, 0, 0, 0.2); 
+		min-height: 40vh; 
+} 
+
+
+/* Style for the verticle bar*/
+.vertical { 
+	color: rgb(35, 35, 106); 
+	margin: 0 2%; 
+	border-width: 2px; 
+} 
+
+/* Style for table*/
+#table { 
+	border-collapse: collapse; 
+	width: 50vw; 
+	border: 1px solid #ddd; 
+	font-size: 18px; 
+} 
+
+/* Table */
+#table th, 
+#table td { 
+	text-align: left; 
+	padding: 12px; 
+} 
+
+/* Table row */
+#table tr { 
+	border-bottom: 1px solid #ddd; 
+} 
+
+/* Headings*/
+#table tr.titles { 
+	background-color: rgb(224, 179, 64); 
+} 
+
+/* Style for each input item */
+.inputitem { 
+	display: flex; 
+	flex-direction: row; 
+	font-weight: bolder; 
+	font-size: large; 
+	padding: 1%; 
+} 
+
+input, 
+select, 
+option { 
+	padding: 2%; 
+	border-radius: 5px; 
+	margin: 2%; 
+} 
+
+button { 
+	font-size: large; 
+	border-radius: 5px; 
+	padding: 1%; 
+} 
+
+.zoom { 
+	color: black; 
+	transition: transform .2s; 
+
+}
+
+.zoom:hover { 
+	transform: scale(1.23); 
+
+	color: green; 
+}
+#new{
+	background: linear-gradient(315deg, rgb(238, 180, 44) 3%, rgb(222, 186, 88) 38%, rgb(188, 161, 112) 68%, rgb(240, 194, 120) 98%);
+}
+.inputitem{
+	margin: 10px;
+	background-color:  rgba(241, 193, 72, 0.693); ;
+}
+.letus{
+	background-color:  rgb(231, 224, 208);;
+	border-radius: 50px;
+	width: 20px;
+}
+.letus:hover{
+	background-color:  rgb(24, 24, 23); ;
+}
+.newh2{
+	color:  rgb(191, 157, 73);
+}
+.titles{
+	background-color: rgb(41, 39, 35);
+}
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+.parapara{
+	background-color: burlywood;
+text-decoration: solid;
+font-size: larger;
+color: bisque;
+}
+.mainhead{
+	width: auto; 
+	display: flex; 
+	flex-direction: column; 
+	text-align: center; 
+	margin: auto; 
+	margin-bottom: 40px; 
+	padding: 1%; 
+	box-shadow: 10px 10px 18px 18px rgba(0, 0, 0, 0.2); 
+}
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+  }
+  .imgnew{
+	width: 80px;
+	height: 80px;
+  }
+  .background-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+  }
+  .Balance{
+	border: 10px;
+	border-radius: 20px;
+	border-color: #ddd;
+	background-color: #c6bfbf;
+  }
+  .Balance:hover{
+	background-color: #544f4f94;
+  }
+  .container {
+	position: absolute;
+	width: 10px;
+	height: 100px;
+	border-top-right-radius: 20%;
+	border-bottom-right-radius: 20%;
+  }
+  .container:hover {
+	animation: gradient 15s ease infinite;
+	background: linear-gradient(315deg, rgb(157, 151, 138) 3%, rgb(189, 156, 64) 38%, rgb(110, 84, 35) 68%, rgb(201, 172, 126) 98%);
+
+  }
+  .container1 {
+	background: linear-gradient(315deg, rgb(238, 180, 44) 3%, rgb(222, 186, 88) 38%, rgb(188, 161, 112) 68%, rgb(240, 194, 120) 98%);
+    animation: gradient 15s ease infinite;
+    background-attachment: fixed;
+	top: 10%;
+	left: 0%;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	font-size: 20px;
+  }
+  .container2 {
+	background: linear-gradient(315deg, rgb(238, 180, 44) 3%, rgb(222, 186, 88) 38%, rgb(188, 161, 112) 68%, rgb(240, 194, 120) 98%);
+    animation: gradient 15s ease infinite;
+    background-attachment: fixed;
+	top: 30%;
+	left: 0%;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	font-size: 20px;
+  }
+  .container3 {
+	background: linear-gradient(315deg, rgb(238, 180, 44) 3%, rgb(222, 186, 88) 38%, rgb(188, 161, 112) 68%, rgb(240, 194, 120) 98%);
+    animation: gradient 15s ease infinite;
+    background-attachment: fixed;
+	top: 50%;
+	left: 0%;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	font-size: 20px;
+  }
+  .container4 {
+	background: linear-gradient(315deg, rgb(238, 180, 44) 3%, rgb(222, 186, 88) 38%, rgb(188, 161, 112) 68%, rgb(240, 194, 120) 98%);
+    animation: gradient 15s ease infinite;
+    background-attachment: fixed;
+	top: 70%;
+	left: 0%;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	font-size: 20px;
+  }
+  
+
+  
+
+
